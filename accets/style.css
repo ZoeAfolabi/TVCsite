@@ -13,7 +13,7 @@
   --pistachio_50: hsla(86, 45%, 54%, 0.5);
   --baby-powder: hsl(86, 41%, 97%);
   --light-gray: hsl(0, 0%, 80%);
-  --pistachio: hsl(86, 45%, 54%);
+  --pistachio: hsl(245, 62%, 36%);
   --platinum: hsl(0, 0%, 91%);
   --cultured: hsl(0, 0%, 94%);
   --white-60: hsla(0, 0%, 100%, 0.6);
@@ -400,7 +400,7 @@ body {
 }
 
 /* ===ABOUT SECTION=== */
-.about { padding-block-start: 120px; }
+/* .about { padding-block-start: 120px; } */
 
 .about-banner {
   position: relative;
@@ -570,17 +570,18 @@ body {
 .testi-content { padding: var(--section-padding) 15px; }
 
 .testi .section-title {
-  color: var(--white);
+  color: var(--pistachio_50);
   margin-block: 10px 40px;
+  font-weight: var(--fw-500);
 }
 
 .testi-card { color: var(--white); }
 
 .testi-text,
-.testi-name { font-size: var(--fs-8); }
+.testi-name { font-size: var(--fs-6); }
 
 .testi-text,
-.testi-title { font-family: var(--ff-inter); }
+.testi-title { font-family: var(--ff-oswald); }
 
 .testi-text {
   padding-block-end: 30px;
@@ -616,6 +617,52 @@ body {
 
 .partner-logo:is(:hover, :focus) .color,
 .partner-logo .gray { display: block; }
+
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+footer{
+  border-top: 3px solid #ccc;
+  /* margin-top: 2rem; */
+  padding: 2rem;
+  background-color: var(--eerie-black-1);
+}
+
+footer .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-family: var(--ff-oswald);
+}
+
+.contact-info {
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-info h2 {
+  color: var(--pistachio);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-3);
+}
+
+.contact-info ul li{
+  display: flex;
+  flex-direction: right ;
+  align-items: center;
+  color: var(--medium-turquoise);
+  gap: 1rem;
+  font-size: var(--fs-5);
+}
+
+
+/*-----------------------------------*\
+  PROGRAMS PAGE
+\*-----------------------------------*/
 
 
 
